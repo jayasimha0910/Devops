@@ -1,0 +1,89 @@
+Software Development Life Cycle:
+================================
+> Structured process used for developing software efficiently and with high quality. 
+> It outlines the steps involved from the initial idea or need for software to its final deployment and maintenance.
+
+01. Requirement Analysis
+02. Planning
+03. Designing -> General requirements into Technical Requirements
+04. Implementation — (Development)
+05. Testing
+06. Deployment
+07. Maintenance
+
+Key Phases of SDLC:
+--------------------
+	1.	Planning
+	•	Define the goals, scope, and purpose of the software.
+	•	Identify resources, timelines, costs, and potential risks.
+	2.	Requirement Analysis
+	•	Gather and analyze the business/user requirements.
+	•	Create a Software Requirement Specification (SRS) document.
+	3.	Design
+	•	Translate requirements into a blueprint for building the software.
+	•	Includes UI/UX design, system architecture, and database design.
+	4.	Implementation (or Development)
+	•	Developers write code based on the design.
+	•	This is the actual creation of the software.
+	5.	Testing
+	•	The software is tested to identify and fix bugs.
+	•	Ensures the product meets requirements and works as expected.
+	6.	Deployment
+	•	Software is released for use in the real environment.
+	•	Can be a phased rollout or full deployment.
+	7.	Maintenance
+	•	Continuous support, updates, and bug fixes.
+	•	Improves performance or adds new features over time.
+
+
+Waterfall Method:
+==============
+
+- Sequential: You can’t go back to a previous phase once it’s done.
+- Well-documented: Everything is heavily planned and documented.
+- Rigid: Not flexible with changing requirements.
+- Not ideal for complex or long-term projects.
+- Difficult to accommodate changes in mid-way.
+- Late discovery of bugs or missing features since testing comes after development.
+
+“The Waterfall method is a traditional software development model where the process flows in a linear sequence — like a waterfall — through distinct phases: Requirements gathering, System design, Implementation, Testing, Deployment, and Maintenance.
+
+Each phase must be completed before moving to the next, and there’s typically little flexibility for changes once a phase is finalized. It’s well-suited for projects with clearly defined requirements, where the scope is unlikely to change. While it’s simple and easy to manage, it doesn’t handle changes very well and can delay feedback until later stages, especially during testing.
+
+I’ve learned that while modern development often leans toward Agile, understanding Waterfall is still important, especially in regulated industries like healthcare or aerospace, where documentation and phase-by-phase validation are critical.”
+
+
+Agile Method:
+==============
+
+“Agile is a modern software development methodology focused on flexibility, collaboration, and customer feedback. Instead of delivering a complete product at the end like the Waterfall model, Agile delivers work in small, manageable chunks called iterations or sprints — usually 1 to 4 weeks long.
+
+Each sprint includes planning, development, testing, and review. Agile encourages constant interaction between developers, testers, and stakeholders, so the team can quickly adapt to changes in requirements or priorities. Common frameworks under Agile include Scrum and Kanban.
+
+One of the key benefits of Agile is that it enables early and continuous delivery of valuable software. I’ve seen how Agile helps reduce risk and improves customer satisfaction because feedback is gathered regularly and changes are welcomed.”
+
+- PI Planning - Program Increment Planning - Clear Road Map, Dependency’s, Clear Goal, Typically lasts for 8 to 12 weeks 
+- PI is broken into Sprints - 2/4/6 weeks
+- In short, PI Planning provides the big picture, while sprints execute that plan incrementally.
+
+What DevOps is?:
+==============
+
+- DevOps is a set of practices, that combines software development (Dev) and IT operations (Ops). The goal is to shorten the software development lifecycle and deliver high-quality software continuously and reliably.
+
+- DevOps  aims to bridge the gap between software development and IT operations. The goal is to deliver software faster, more reliably, and with better quality.
+
+- It encourages collaboration between development and operations teams, and relies heavily on automation — especially in areas like code integration, testing, deployment, and monitoring. Key practices include Continuous Integration (CI), Continuous Delivery (CD), Infrastructure as Code, and automated testing.
+
+- By implementing DevOps, teams can reduce manual work, catch bugs early, and respond to changes quickly, making the entire software lifecycle more efficient.
+
+- DevOps helps improve efficiency, reduce bugs, and deliver features faster.
+
+DevOps:
+=======
+DevOps is a process of building, testing and releasing code on the same day when developers writes something. So through this process we can achieve collaboration b/t teams, faster release and less defects.
+- Speed and Accuracy
+- Stable build/Image
+
+
+
