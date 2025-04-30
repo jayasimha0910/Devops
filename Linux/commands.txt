@@ -1,1 +1,16 @@
+Commands:
+============
+
+Listing Files:
+———————--------
+> ls —> To list all the files and directories stored in the current directory
+- ls -l --> long listing format in alphabetical order
+- ls -lr --> long listing format in reverse alphabetical order
+- ls -lt --> long listing format but latest files on top
+- ls -ltr --> long listing format but latest files at bottom
+- ls -la --> long listing format all files including hidden files and folders
+- ls -a —> List all file including hidden files
+	- Single dot (.) − This represents the current directory.
+	- Double dot (..) − This represents the parent directory.
+
 
