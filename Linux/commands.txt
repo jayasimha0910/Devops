@@ -81,3 +81,13 @@ vi/vim Cheat sheet:
 |               | `V`             | Visual line mode                             |
 |               | `Ctrl + v`      | Visual block mode                            |
 
+
+Viewing Files:
+----------------
+> cat > <file-name> --> type text, press enter and ctrl+d
+  - If you try to append new content into file with same command, previous content will be replaced with new appended content
+  - cat >> <file-name> --> appends text to previous content
+  - “>” --> usually called as redirection
+
+
+
