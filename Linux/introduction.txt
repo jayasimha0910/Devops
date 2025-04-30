@@ -1,0 +1,53 @@
+What is Kernel?
+===============
+* The kernel is the core part of an operating system.
+* It controls how software and hardware interact.
+* It acts as a bridge between hardware and software — managing everything your computer does behind the scenes.
+* Apps ↔ Kernel ↔ Hardware (CPU, memory, disk, network)
+* If the OS is a car 🚗, the kernel is the engine — powerful and essential, but not something you interact with directly.
+
+Kernel ≠ Full OS:
+==================
+
+| Component       | Description                                                             |
+|-----------------|-------------------------------------------------------------------------|
+| Kernel          | Just the low-level engine managing hardware and system resources.       |
+| Operating System| Kernel + user tools (like bash, file manager, GUI, etc.) = full OS.     |
+
+
+What does a kernel do?
+========================
+
+| Function              | What it means                                                         |
+|-----------------------|------------------------------------------------------------------------|
+| Process Management    | Controls running programs (starting, stopping, switching tasks).       |
+| Memory Management     | Allocates and protects RAM usage for apps.                             |
+| Device Drivers        | Lets software talk to hardware (like disk, keyboard, or network).      |
+| File System Access    | Manages reading/writing files and directories.                         |
+| Security & Permissions| Controls who can do what on the system (users, root, etc).             |
+
+
+What is Shell?
+==================
+* A shell is a special user program that provides an interface for the user to use operating system services. 
+* Shell accepts human-readable commands from users and converts them into something which the kernel can understand. 
+* It is a command language interpreter that executes commands read from input devices such as keyboards or from files
+* Shell is broadly classified into two categories –
+    * Command Line Shell
+    * Graphical shell
+
+
+Client Server Model/Architecture:
+====================================
+- Client: Asks for a service or data.
+    * Example: Your web browser (like Chrome) is a client when you open a website.
+- Server: Provides the service or data when requested.
+    * Example: A web server (like the one running a website) sends you the web pages when your browser asks.
+
+
+Authentication methods:
+=========================
+* What you know - password, PIN, or security question
+* What you have - Tokens, Keys, Authentication - a physical object or digital token.
+* What you are - Retina, Finger Print - biometric traits unique to you.
+
