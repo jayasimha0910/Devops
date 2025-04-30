@@ -1,0 +1,44 @@
+Permissions for the files
+=========================
+
+7 is a magic number: "4+2+1=7”
+-> 4 —> Read - r
+-> 2 —> Write - w
+-> 1 —> Execute - x
+
+| Number | Octal Permission Representation                                              | Ref  |
+|--------|------------------------------------------------------------------------------|------|
+| 0      | No permission                                                                | ---  |
+| 1      | Execute permission                                                           | --x  |
+| 2      | Write permission                                                             | -w-  |
+| 3      | Execute and write permission: 1 (execute) + 2 (write) = 3                    | -wx  |
+| 4      | Read permission                                                              | r--  |
+| 5      | Read and execute permission: 4 (read) + 1 (execute) = 5                      | r-x  |
+| 6      | Read and write permission: 4 (read) + 2 (write) = 6                          | rw-  |
+| 7      | All permissions: 4 (read) + 2 (write) + 1 (execute) = 7                      | rwx  |
+
+
+Types of files
+==============
+In Linux, when you run ls -l, the first character in the permissions string indicates the type of file:
+
+| Symbol | Meaning                    |
+|--------|----------------------------|
+| -      | Regular file *(Important)* |
+| d      | Directory *(Important)*    |
+| l      | Symbolic link              |
+| c      | Character device           |
+| b      | Block device               |
+| s      | Socket                     |
+| p      | Named pipe (FIFO)          |
+
+Example:
+—————---
+-> -rwxr-xr-x  → Regular file with rwx for user, r-x for group, r-x for others
+-> drwxr-x---  → Directory with rwx for user, r-x for group, --- for others
+-> lrwxrwxrwx  → Symbolic link with full permissions (not enforced)
+
+| Entry       | File Type      | Permissions (User / Group / Others)                         |
+|-------------|----------------|-------------------------------------------------------------|
+| -rw-r--r--  | - = Regular File | User: read/write, Group: read, Others: read               |
+| drwxr-xr-x  | d = Directory    | User: all, Group: read/execute, Others: read/execute      |
