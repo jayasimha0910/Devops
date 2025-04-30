@@ -13,4 +13,71 @@ Listing Files:
 	- Single dot (.) − This represents the current directory.
 	- Double dot (..) − This represents the parent directory.
 
+Creating files:
+—————————---------
+> touch <file-name> --> creates empty file
+> vi or vim <file-name> 
+  - The vi command is used to open, create, or edit a file using the Vi text editor, which is a standard editor on most Unix/Linux systems
+  - If <file-name> exists → Opens it for editing.
+  - If <file-name> does not exist → Creates a new file with that name and opens to add content.
+
+
+💡 Common Commands in Vi:
+
+| Action               | Command       |
+|----------------------|---------------|
+| Enter Insert Mode    | `i`           |
+| Save changes         | `:w`          |
+| Quit Vi              | `:q`          |
+| Save and Quit        | `:wq` or `ZZ` |
+| Quit without saving  | `:q!`         |
+| Delete a line        | `dd`          |
+| Copy (yank) a line   | `yy`          |
+| Paste below          | `p`           |
+| Undo last change     | `u`           |
+
+
+✅ :wq! — Force Save and Quit in vi/vim
+The command :wq! in vi or vim means:
+	•	w → Write (save the file)
+	•	q → Quit the editor
+	•	! → Force the action, even if:
+	•	The file is read-only
+	•	You’re not the original owner (if permissions allow)
+	•	The file has warnings or changes that would otherwise prevent saving
+
+
+vi/vim Cheat sheet:
+
+| Mode          | Command         | Description                                  |
+|---------------|-----------------|----------------------------------------------|
+| **Navigation**| `h`, `j`, `k`, `l` | Move left, down, up, right                |
+|               | `G`             | Go to last line                              |
+|               | `gg`            | Go to first line                             |
+|               | `0`, `$`        | Move to beginning, end of the line           |
+|               | `w`, `b`        | Next word, previous word                     |
+|               | `Ctrl + f/b`    | Page forward/backward                        |
+| **Insert**    | `i`             | Insert before cursor                         |
+|               | `I`             | Insert at beginning of line                  |
+|               | `a`             | Append after cursor                          |
+|               | `A`             | Append at end of line                        |
+|               | `o`, `O`        | Open new line below/above                    |
+| **Editing**   | `x`, `X`        | Delete char under/before cursor             |
+|               | `dd`            | Delete (cut) a line                          |
+|               | `yy`            | Yank (copy) a line                           |
+|               | `p`, `P`        | Paste after/before cursor                    |
+|               | `u`             | Undo                                         |
+|               | `Ctrl + r`      | Redo                                         |
+|               | `r<char>`       | Replace a character                          |
+| **Searching** | `/pattern`      | Search forward                               |
+|               | `?pattern`      | Search backward                              |
+|               | `n`/`N`         | Next/previous match                          |
+| **Save/Quit** | `:w`            | Write (save)                                 |
+|               | `:q`            | Quit                                         |
+|               | `:wq` or `ZZ`   | Save and quit                                |
+|               | `:q!`           | Quit without saving                          |
+|               | `:wq!`          | Force save and quit (override warnings)      |
+| **Visual**    | `v`             | Start visual mode (character selection)      |
+|               | `V`             | Visual line mode                             |
+|               | `Ctrl + v`      | Visual block mode                            |
 
