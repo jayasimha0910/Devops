@@ -1,0 +1,56 @@
+File Management:
+===================
+
+> ls --> To list all the files and directories stored in the current directory on a Linux system 
+  - ls -l --> Long listing (The command ls supports the -l option which would help you to get more information about the listed files)
+
+| Permissions | Links | Owner   | Group   | Size    | Date             | Name              |
+|-------------|--------|---------|---------|---------|------------------|------------------|
+| drwxrwxr-x  | 2      | amrood  | amrood  | 4096    | Dec 25 09:59     | uml              |
+| -rw-rw-r--  | 1      | amrood  | amrood  | 5341    | Dec 25 08:38     | uml.jpg          |
+| drwxr-xr-x  | 2      | amrood  | amrood  | 4096    | Feb 15  2006     | univ             |
+| drwxr-xr-x  | 2      | root    | root    | 4096    | Dec  9  2007     | urlspedia        |
+| -rw-r--r--  | 1      | root    | root    | 276480  | Dec  9  2007     | urlspedia.tar    |
+| drwxr-xr-x  | 8      | root    | root    | 4096    | Nov 25  2007     | usr              |
+| drwxr-xr-x  | 2      | 200     | 300     | 4096    | Nov 25  2007     | webthumb-1.01    |
+| -rwxr-xr-x  | 1      | root    | root    | 3192    | Nov 25  2007     | webthumb.php     |
+| -rw-rw-r--  | 1      | amrood  | amrood  | 20480   | Nov 25  2007     | webthumb.tar     |
+| -rw-rw-r--  | 1      | amrood  | amrood  | 5654    | Aug  9  2007     | yourfile.mid     |
+| -rw-rw-r--  | 1      | amrood  | amrood  | 166255  | Aug  9  2007     | yourfile.swf     |
+| drwxr-xr-x  | 11     | amrood  | amrood  | 4096    | May 29  2007     | zlib-1.2.3       |
+
+> Here is the information about all the listed columns −
+
+| Column       | Description                                               |
+|--------------|-----------------------------------------------------------|
+| Permissions  | File/directory permissions (owner, group, others)         |
+| Links        | Number of hard links to the file or directory             |
+| Owner        | Username of file creator or owner                         |
+| Group        | Group that owns the file                                  |
+| Size         | File size in bytes (human-readable in `ls -lh`)           |
+| Date         | Last modified time of the file                            |
+| Name         | File or directory name                                    |
+
+| Column         | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| First Column   | Represents the file type and the permissions given on the file.             |
+| Second Column  | Represents the number of memory blocks taken by the file or directory.      |
+| Third Column   | Represents the owner of the file (Linux user who created it).               |
+| Fourth Column  | Represents the group of the owner. Every Linux user has an associated group.|
+| Fifth Column   | Represents the file size in bytes.                                          |
+| Sixth Column   | Represents the date and time the file was last modified.                    |
+| Seventh Column | Represents the file or directory name.                                      |
+
+
+> In the ls -l listing example, every file line begins with a d, -, or l. These characters indicate the type of the file that's listed.
+
+| Prefix | Description                                                                 |
+|--------|-----------------------------------------------------------------------------|
+| `-`    | Regular file, such as an ASCII text file, binary executable, or hard link.  |
+| `b`    | Block special file (e.g., physical hard drive).                             |
+| `c`    | Character special file (e.g., raw I/O device like a terminal).              |
+| `d`    | Directory which contains other files and directories.                       |
+| `l`    | Symbolic link (shortcut or reference to another file).                      |
+| `p`    | Named pipe (used for interprocess communication).                           |
+| `s`    | Socket (used for interprocess communication).                               |
+
