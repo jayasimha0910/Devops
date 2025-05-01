@@ -18,7 +18,7 @@ Command Mode (Sometimes this is also called ESC Mode)
 :/<word-search> --> search for the word from top
 :?<word-search> --> search for the word from bottom
 :noh --> no highlight
-:set numbers or set nu
+:set numbers or set nu --> Nnumbers will be displayed for each row
 :27 d --> delete 27th line
 :%d --> total content will be deleted
 :3s/sbin/SBIN --> in 3rd line first occurence of sbin will be replaced with SBIN
