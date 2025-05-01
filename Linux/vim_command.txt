@@ -24,8 +24,10 @@ Command Mode (Sometimes this is also called ESC Mode)
 :3s/sbin/SBIN --> in 3rd line first occurence of sbin will be replaced with SBIN
 :3s/sbin/SBIN/g --> all occurence in that line
 :%s/sbin/SBIN/g --> all occurences in the file
- - %s --> Apply the substitution to all the lines in the file
- - g --> 'g' stands for Global
+   - %s --> Apply the substitution to all the lines in the file
+   - g --> 'g' stands for Global
+:[start],[end]d --> To delete a specific number of lines
+   - 3,5d --> In this command the editor will delete the lines from 3 to 5
 
 Esc Mode
 ==========
