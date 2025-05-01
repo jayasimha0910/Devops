@@ -6,8 +6,12 @@ Pipes:
 
 Filters:
 =========
-01. grep —> It is a pattern or expression matching command. It searches for a pattern or regular expression that matches in files or directories and then prints found matches
+
+grep
+-------
+- It is a pattern or expression matching command. It searches for a pattern or regular expression that matches in files or directories and then prints found matches
 >Syntax: $grep [options] "pattern to be matched" filename
+
 >optipns:
 | Sr. No. | Option | Description                                           |
 |--------:|--------|-------------------------------------------------------|
@@ -22,8 +26,11 @@ Filters:
   - Output : it searches for hello in all the files and directories.
 
 
-02. sort -> It sorts lines of text alphabetically or numerically, default sorting is alphabetical
+sort
+------
+- It sorts lines of text alphabetically or numerically, default sorting is alphabetical
 >Syntax: $sort[options] filename
+
 > options:
 | Option | Description                                                                  |
 |--------|----------------------------------------------------------------------------- |
@@ -37,3 +44,40 @@ Filters:
 | `-M`   | Sorts by **month names** (e.g., Jan, Feb).                                   |
 | `-V`   | Sorts **version numbers** naturally (e.g., `v2` before `v10`).               |
 | `-c`   | **Checks** whether input is already sorted.                                  |
+
+
+more
+-----------
+- It is used to customize the displaying contents of file. It displays the text file contents on the terminal with paging controls. 
+- Following key controls are used:
+  - To display next line, press the enter key
+  - To bring up next screen, press spacebar
+  - To move to the next file, press n
+  - To quit, press q.
+>Syntax: $more[options] filename
+
+
+>options:
+| Option        | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| `-d`          | Displays a `[Press space to continue, 'q' to quit]` prompt.                 |
+| `-c`          | Clears the screen before displaying each page.                              |
+| `-p`          | Paints the screen (like `-c` but faster).                                   |
+| `-s`          | Squeezes multiple blank lines into one.                                     |
+| `-u`          | Suppresses underlining.                                                     |
+| `-f`          | Counts logical lines (does not fold long lines).                            |
+| `-n`          | Suppresses line numbering (not supported in all versions).                  |
+| `+/pattern`   | Starts displaying from the line that matches the `pattern`.                 |
+| `+num`        | Starts displaying from line `num`.                                          |
+| `-`           | A hyphen alone resets options previously set.                               |
+
+
+>use cases:
+| Command                          | Description                                                              |
+|----------------------------------|--------------------------------------------------------------------------|
+| `more file.txt`                  | View file one screen at a time.                                          |
+| `more -s file.txt`               | Squeeze multiple blank lines in output.                                  |
+| `more -d file.txt`               | Show help prompt during navigation.                                      |
+| `more +50 file.txt`              | Start displaying from line 50.                                           |
+| `more +/error file.txt`          | Start displaying from the first match of "error".                        |
+| `cat file.txt | more`            | View piped output page by page.                                          |
