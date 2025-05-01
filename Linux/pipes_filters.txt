@@ -6,7 +6,7 @@ Pipes:
 
 Filters:
 =========
-> grep —> It is a pattern or expression matching command. It searches for a pattern or regular expression that matches in files or directories and then prints found matches
+01. grep —> It is a pattern or expression matching command. It searches for a pattern or regular expression that matches in files or directories and then prints found matches
 >Syntax: $grep [options] "pattern to be matched" filename
 >optipns:
 | Sr. No. | Option | Description                                           |
@@ -16,3 +16,24 @@ Filters:
 | 3       | `-l`   | Prints only the names of files with matching lines.   |
 | 4       | `-c`   | Prints only the count of matching lines.              |
 | 5       | `-i`   | Matches either uppercase or lowercase letters.        |
+
+> Grep command can also be used with meta-characters: 
+  - Input : $grep 'hello' *
+  - Output : it searches for hello in all the files and directories.
+
+
+02. sort -> It sorts lines of text alphabetically or numerically, default sorting is alphabetical
+>Syntax: $sort[options] filename
+> options:
+| Option | Description                                                                  |
+|--------|----------------------------------------------------------------------------- |
+| `-r`   | Sorts in **reverse** (descending) order.                                     |
+| `-n`   | Sorts **numerically** (e.g., 2 before 10).                                   |
+| `-k`   | Sorts by a **specific column or field** (e.g., `-k 2` for 2nd column).       |
+| `-t`   | Specifies the **delimiter** (e.g., `-t,` for CSV files).                     |
+| `-u`   | Removes **duplicate lines** after sorting.                                   |
+| `-o`   | Writes sorted output to a **file** (e.g., `-o sorted.txt`).                  |
+| `-b`   | Ignores leading **blank spaces** when sorting.                               |
+| `-M`   | Sorts by **month names** (e.g., Jan, Feb).                                   |
+| `-V`   | Sorts **version numbers** naturally (e.g., `v2` before `v10`).               |
+| `-c`   | **Checks** whether input is already sorted.                                  |
