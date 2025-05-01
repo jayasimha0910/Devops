@@ -64,7 +64,7 @@ vi/vim Cheat sheet:
 |               | `a`             | Append after cursor                          |
 |               | `A`             | Append at end of line                        |
 |               | `o`, `O`        | Open new line below/above                    |
-| **Editing**   | `x`, `X`        | Delete char under/before cursor             |
+| **Editing**   | `x`, `X`        | Delete char under/before cursor              |
 |               | `dd`            | Delete (cut) a line                          |
 |               | `yy`            | Yank (copy) a line                           |
 |               | `p`, `P`        | Paste after/before cursor                    |
