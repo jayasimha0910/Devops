@@ -2,7 +2,7 @@ vim command:
 ==============
 > vim command has 2/3 modes:
    - ESC mode
-   - ":" - Colon mode/command mode
+   - ":" - Colon mode/Command mode
    - "i" insert mode
 
 > vim <file-name> -> Creates a new file if it already does not exist, otherwise opens an existing file
