@@ -1,1 +1,9 @@
+vim command:
+==============
 
+> vim command has 2/3 modes:
+   - ESC mode
+   - ":" colon mode
+   - "i" insert mode
+
+> vim <file-name>
