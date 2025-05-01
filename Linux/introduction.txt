@@ -18,7 +18,7 @@ Kernel ≠ Full OS:
 What does a kernel do?
 ========================
 
-| Function              | What it means                                                         |
+| Function              | What it means                                                          |
 |-----------------------|------------------------------------------------------------------------|
 | Process Management    | Controls running programs (starting, stopping, switching tasks).       |
 | Memory Management     | Allocates and protects RAM usage for apps.                             |
