@@ -1,9 +1,39 @@
 vim command:
 ==============
-
 > vim command has 2/3 modes:
    - ESC mode
-   - ":" colon mode
+   - ":" - Colon mode/command mode
    - "i" insert mode
 
-> vim <file-name>
+> vim <file-name> -> Creates a new file if it already does not exist, otherwise opens an existing file
+> vim -R <file-name> -> To open a file in read only mode
+> view <file-name> -> Opens an existing file in the read-only mode.
+
+Command Mode (Sometimes this is also called ESC Mode)
+========================================================
+:q -> quit the file
+:wq --> write and quit
+:wq! --> force write and quit
+:q! --> exit without saving
+:/<word-search> --> search for the word from top
+:?<word-search> --> search for the word from bottom
+:noh --> no highlight
+:27 d --> delete 27th line
+:%d --> total content will be deleted
+:3s/sbin/SBIN --> in 3rd line first occurence of sbin will be replaced with SBIN
+:3s/sbin/SBIN/g --> all occurence in that line
+:%s/sbin/SBIN/g --> all occurences in the file
+
+Esc Mode
+==========
+u --> undo
+yy --> copy the line where you are
+p --> paste
+dd --> cut the line
+gg --> takes to top of the file
+shift+g --> takes us to bottom of the file
+
+
+Insert mode
+===============
+> In insert mode we can enter text 
