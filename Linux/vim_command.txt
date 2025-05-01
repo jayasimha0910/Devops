@@ -25,6 +25,7 @@ Command Mode (Sometimes this is also called ESC Mode)
 :3s/sbin/SBIN/g --> all occurence in that line
 :%s/sbin/SBIN/g --> all occurences in the file
  - %s --> Apply the substitution to all the lines in the file
+ - g --> 'g' stands for Global
 
 Esc Mode
 ==========
