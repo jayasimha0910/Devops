@@ -29,6 +29,8 @@ Command Mode (Sometimes this is also called ESC Mode)
    - g --> 'g' stands for Global
 :[start],[end]d --> To delete a specific number of lines
    - 3,5d --> In this command the editor will delete the lines from 3 to 5
+:syntax on --> To highlight syntax
+:syntax off --> To turnoff syntax highlight
 
 Esc Mode
 ==========
