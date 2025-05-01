@@ -18,6 +18,7 @@ Creating files:
 > touch <file-name> --> creates empty file
 > vi or vim <file-name> 
 > vi -R <file-name> —> Opens in Read only mode 
+> vi has two modes - command mode & Insert mode 
   - The vi command is used to open, create, or edit a file using the Vi text editor, which is a standard editor on most Unix/Linux systems
   - If <file-name> exists → Opens it for editing.
   - If <file-name> does not exist → Creates a new file with that name and opens to add content.
