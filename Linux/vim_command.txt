@@ -34,7 +34,7 @@ yy --> copy the line where you are
 p --> paste
 dd --> cut the line
 gg --> takes to top of the file
-shift+g --> takes us to bottom of the file
+shift + g --> takes us to bottom of the file
 
 
 Insert mode
