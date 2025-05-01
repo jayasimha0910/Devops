@@ -1,0 +1,18 @@
+Pipes:
+=========
+> Piping is used to give the output of one command (written on LHS) as input to another command (written on RHS). Commands are piped together using vertical bar “ | ” symbol
+> syntax: command 1 | command 2
+
+
+Filters:
+=========
+> grep —> It is a pattern or expression matching command. It searches for a pattern or regular expression that matches in files or directories and then prints found matches
+>Syntax: $grep [options] "pattern to be matched" filename
+>optipns:
+| Sr. No. | Option | Description                                           |
+|--------:|--------|-------------------------------------------------------|
+| 1       | `-v`   | Prints all lines that do not match the pattern.       |
+| 2       | `-n`   | Prints the matched line and its line number.          |
+| 3       | `-l`   | Prints only the names of files with matching lines.   |
+| 4       | `-c`   | Prints only the count of matching lines.              |
+| 5       | `-i`   | Matches either uppercase or lowercase letters.        |
