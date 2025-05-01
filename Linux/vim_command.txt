@@ -35,6 +35,10 @@ p --> paste
 dd --> cut the line
 gg --> takes to top of the file
 shift + g --> takes us to bottom of the file
+h --> move cursor to left
+j --> move cursor to down
+k --> move cursor to up
+l --> move cursor to right
 
 
 Insert mode
