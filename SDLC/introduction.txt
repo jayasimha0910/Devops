@@ -35,9 +35,9 @@ Key Phases of SDLC:
 	•	Continuous support, updates, and bug fixes.
 	•	Improves performance or adds new features over time.
 
+
 Waterfall Method:
 ==============
-
 - Sequential: You can’t go back to a previous phase once it’s done.
 - Well-documented: Everything is heavily planned and documented.
 - Rigid: Not flexible with changing requirements.
@@ -54,7 +54,6 @@ I’ve learned that while modern development often leans toward Agile, understan
 
 Agile Method:
 ==============
-
 “Agile is a modern software development methodology focused on flexibility, collaboration, and customer feedback. Instead of delivering a complete product at the end like the Waterfall model, Agile delivers work in small, manageable chunks called iterations or sprints — usually 1 to 4 weeks long.
 
 Each sprint includes planning, development, testing, and review. Agile encourages constant interaction between developers, testers, and stakeholders, so the team can quickly adapt to changes in requirements or priorities. Common frameworks under Agile include Scrum and Kanban.
@@ -67,7 +66,6 @@ One of the key benefits of Agile is that it enables early and continuous deliver
 
 What DevOps is?:
 ==============
-
 - DevOps is a set of practices, that combines software development (Dev) and IT operations (Ops). The goal is to shorten the software development lifecycle and deliver high-quality software continuously and reliably.
 
 - DevOps  aims to bridge the gap between software development and IT operations. The goal is to deliver software faster, more reliably, and with better quality.
@@ -77,6 +75,7 @@ What DevOps is?:
 - By implementing DevOps, teams can reduce manual work, catch bugs early, and respond to changes quickly, making the entire software lifecycle more efficient.
 
 - DevOps helps improve efficiency, reduce bugs, and deliver features faster.
+
 
 DevOps:
 =======
