@@ -26,6 +26,7 @@ Command Mode (Sometimes this is also called ESC Mode)
 :3s/sbin/SBIN/n --> in 3rd line "nth" occurence of sbin will be replaced with SBIN
 :3s/sbin/SBIN/g --> all occurence in that line
 :%s/sbin/SBIN/g --> all occurences in the file
+ - %s --> Apply the substitution to all the lines in the file
 
 Esc Mode
 ==========
