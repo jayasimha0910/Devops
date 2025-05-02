@@ -14,3 +14,15 @@ awk:
 
 cut:
 =========
+> Syntax:
+        cut OPTION [FILE]
+
+>Use cases:
+| Option                  | Description                                  | Example                                                      | Output     | Use Case                                 |
+|-------------------------|--------------------------------------------- |------------------------------------------------------------- |------------|------------------------------------------|
+| `-b`                    | Select specific bytes                        | `echo "abcdef"  | cut -b1-3`                                 | `abc`      | Extract fixed-width byte ranges          |
+| `-c`                    | Select specific characters                   | `echo "abcdef"  | cut -c2,4,6`                               | `bdf`      | Extract character positions              |
+| `-d`                    | Set delimiter (used with `-f`)               | `echo "a:b:c"   | cut -d: -f2`                               | `b`        | Define custom field separator            |
+| `-f`                    | Select specific fields                       | `cut -d: -f1 /etc/passwd`                                    | `root`,etc.| Extract columns from delimited files     |
+| `--complement`          | Invert selection (exclude fields/bytes/chars)| `echo "1:2:3"  | cut -d: --complement -f2`                   | `1:3`      | Remove a specific field                  |
+| `--output-delimiter=STR`| Set output field separator                   | `echo "a:b"  | cut -d: -f1,2 --output-delimiter='|'`         | `a|b`      | Change output delimiter                  |
