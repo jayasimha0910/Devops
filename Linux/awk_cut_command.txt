@@ -10,3 +10,6 @@ awk:
   - It prints "https:"
 - ps -ef | grep mac | awk -F " " '{print $2}’ 
   - This command prints the process id’s which has keyword of Mac. Since P.ID’s are present in 2 column, so I have given 2.
+
+cut:
+=========
