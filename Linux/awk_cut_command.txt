@@ -1,1 +1,12 @@
+awk:
+=========
+- Used for pattern scanning and processing. 
+- It searches one or more files to see if they contain lines that matches with the specified patterns and then perform the associated actions
+> Syntax:
+        awk options 'selection _criteria {action }' input-file > output-file
 
+> Eg:
+- echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
+  - It prints "https:"
+- ps -ef | grep mac | awk -F " " '{print $2}’ 
+  - This command prints the process id’s which has keyword of Mac. Since P.ID’s are present in 2 column, so I have given 2.
