@@ -4,7 +4,7 @@ File Management:
 > ls --> To list all the files and directories stored in the current directory on a Linux system 
   - ls -l --> Long listing (The command ls supports the -l option which would help you to get more information about the listed files)
 
-| Permissions | Links | Owner   | Group   | Size    | Date             | Name              |
+| Permissions | Links  | Owner   | Group   | Size    | Date             | Name             |
 |-------------|--------|---------|---------|---------|------------------|------------------|
 | drwxrwxr-x  | 2      | amrood  | amrood  | 4096    | Dec 25 09:59     | uml              |
 | -rw-rw-r--  | 1      | amrood  | amrood  | 5341    | Dec 25 08:38     | uml.jpg          |
