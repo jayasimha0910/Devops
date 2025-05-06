@@ -1,1 +1,100 @@
+wget
+=======
+
+- wget is a powerful command-line utility used to download files from the web or internal servers
+- Wget is the non-interactive network downloader which is used to download files from the server even when the user has not logged on to the system and it can work in the background without hindering the current process
+- wget is a free utility for non-interactive download of files from the Web. It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+- wget is non-interactive, meaning that it can work in the background, while the user is not logged on. This allows you to start a retrieval and disconnect from the system, letting wget finish the work
+
+syntax:
+--------
+- wget [option] [URL]
+  - [options] represents various command-line options that modify the behavior of Wget
+  - [URL] is the address of the file or website to be downloaded
+
+Examples:
+-----------
+1. To simply download a webpage: 
+- To download a single file from a URL, simply specify the URL as follows:
+  - wget http://example.com/sample.php
+
+2. To download the file in background 
+- Run the download process in the background using the -b or --background option:
+  - wget -b http://www.example.com/samplepage.php
+
+3. To overwrite the log while of the wget command 
+- Redirect the output messages to a log file using the -o option: 
+  - wget http://www.example.com/filename.txt -o /path/filename.txt
+
+4. To resume a partially downloaded file 
+- If a download is interrupted, resume it using the -c option:
+  - wget -c http://example.com/samplefile.tar.gz
+
+5. To try a given number of times 
+- Specify the number of retry attempts using the --tries option: 
+  - wget --tries=10 http://example.com/samplefile.tar.gz
+
+6. Set Wait Time Between Retrievals:
+- Set the wait time between retrievals using the -w option (in seconds, minutes, hours, or days):
+  - wget -w 10 http://example.com/large_file.zip
+
+7. Enable Recursive Retrieval:
+- Enable recursive retrieval to download an entire website using the -r option:
+  - wget -r http://example.com/
+
+8. Read URLs from File:
+- Read URLs from a file and download them using the -i option:
+  - wget -i urls.txt
+
+
+curl
+========
+
+- url is a command-line utility for transferring data to or from a server, employing a range of internet protocols such as HTTP, HTTPS, FTP, SCP, and SFTP.
+- Whether you want to download a file, test a REST API, or simply verify that a website is up and running, curl is your best friend. 
+- It is accessed directly from the terminal — no need to fire up a browser or install some slick app.
+
+syntax
+--------
+- curl [options] [URL]
+
+Use cases:
+------------
+01. This command will retrieve the HTML content of the specified URL and display it in the terminal.  
+- curl https://example.com
+
+02. Downloading Files Using curl Command
+- curl is also generally used to download a file from the web. To download a file, you simply provide the URL of the file as the argument:
+  -o: saves the downloaded file to the local host with the specified name in parameters.
+Syntax:
+- curl -o [file_name] [URL...]
+Example:
+- curl -o hello.zip ftp://speedtest.tele2.net/1MB.zip
+
+  -O: This option downloads the file and saves it with the same name as in the URL. 
+    Syntax:
+    - curl -O [URL...]
+    Example:
+    - curl -O ftp://speedtest.tele2.net/1MB.zip
+
+03. Uploading Files
+- If you want to upload a file to a server, for example using FTP (File Transfer Protocol), curl can do that in just one line:
+Example:
+- curl -T uploadfile.txt ftp://example.com/upload/
+  -T uploadfile.txt: This tells curl which file to upload (in this case, a file called uploadfile.txt).
+  ftp://example.com/upload/: This is the destination FTP URL where the file will be uploaded.
+
+04. Handling Authentication
+- Sometimes the API or site you’re trying to access is protected with a username and password. In those cases, you can put your credentials in the command itself using the -u flag.
+Example:
+- curl -u username:password https://example.com/api
+  -u username:password: This sends your login details securely with the request.
+  https://example.com/api: The protected API or resource you want to access.
+
+05. -C – Option:
+- This option resumes download which has been stopped due to some reason. This is useful when downloading large files and was interrupted. 
+Syntax:
+- curl -C - [URL...]
+Example:
+- curl -C - -O ftp://speedtest.tele2.net/1MB.zip
 
