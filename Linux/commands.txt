@@ -1,8 +1,5 @@
-Commands:
-============
-
 Listing Files:
-———————--------
+==================
 > ls —> To list all the files and directories stored in the current directory
 - ls -l --> long listing format in alphabetical order
 - ls -lr --> long listing format in reverse alphabetical order
@@ -14,7 +11,7 @@ Listing Files:
 	- Double dot (..) − This represents the parent directory.
 
 Creating files:
-—————————---------
+================
 > touch <file-name> --> creates empty file
 > vi or vim <file-name> 
 > vi -R <file-name> —> Opens in Read only mode 
@@ -85,11 +82,27 @@ vi/vim Cheat sheet:
 
 
 Viewing Files:
-----------------
+===============
 > cat > <file-name> --> type text, press enter and ctrl+d
   - If you try to append new content into file with same command, previous content will be replaced with new appended content
   - cat >> <file-name> --> appends text to previous content
   - “>” --> usually called as redirection
+
+
+echo command
+===============
+- The echo command in Linux is a built-in command that allows users to display lines of text or strings that are passed as arguments. 
+- It is commonly used in shell scripts and batch files to output status text to the screen or a file.
+
+Syntax of `echo` command in Linux:
+- echo [option] [string]
+
+Options:
+--------
+> - Redirect the output to a file
+>> - Appends output to a file
+* - Prints all the dir/files in the current dir
+-n - omits trailing to new line
 
 
 
