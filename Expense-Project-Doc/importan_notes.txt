@@ -1,0 +1,34 @@
+Application User:
+------------------
+> useradd --system --home /app --shell /sbin/nologin --comment "expense user" expense
+
+Usage:
+-------
+🔍 Breakdown:
+	•	useradd: The command to add a new user.
+	•	--system:
+Creates a system account, which:
+	•	Is typically used for system-level services or daemons.
+	•	Gets a UID below 1000 (in most distributions).
+	•	Is not intended for interactive login.
+	•	--home /app:
+Sets the user’s home directory to /app instead of the default /home/expense.
+	•	--shell /sbin/nologin:
+Specifies the login shell as /sbin/nologin, meaning:
+	•	This user cannot log in interactively (e.g., via SSH or terminal).
+	•	This is a common practice for service users.
+	•	--comment "expense user":
+Adds a description (GECOS field) for the user — helpful for documentation or admin clarity.
+	•	expense:
+This is the username being created.
+
+⸻
+
+🧠 Practical Use:
+
+This command is typically used in system setup scripts or service deployment where you need a dedicated user account to run a background service or app, like an “Expense Manager” app.
+
+The user:
+	•	Cannot log in interactively (improves security).
+	•	Has a defined home directory (/app) where the app might live.
+	•	Is isolated, which helps in managing permissions securely.
