@@ -62,6 +62,11 @@ Once you got mysql prompt, you can use below command to check schemas/databases 
 show databases;
 ```
 
+To connect to database
+```
+use <database_name>;
+```
+
 Once you are in particular schema, you can get the list of tables.
 
 ```
