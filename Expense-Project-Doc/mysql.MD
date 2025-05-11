@@ -29,6 +29,11 @@ To check ports
 netstat -lntp
 ```
 
+Verify the domain
+```
+nslookup <address>
+```
+
 Next, We need to change the default root password in order to start using the database service. Use password ExpenseApp@1 or any other as per your choice.
 
 ```
