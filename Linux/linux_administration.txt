@@ -4,3 +4,5 @@ Learn:
 02. Process Management
 03. Service Management
 04. Network Management
+05. memory Management
+06. Harddisk Management
