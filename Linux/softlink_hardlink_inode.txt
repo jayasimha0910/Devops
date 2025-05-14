@@ -1,0 +1,79 @@
+Links
+=========
+- Links in UNIX are pointers pointing to a file or a directory. 
+- Creating links is a kind of shortcuts to access a file. 
+- Links allow more than one file name to refer to the same file, elsewhere. 
+
+There are two types of links :
+--------------------------------
+  01. Soft Link or Symbolic links
+  02. Hard Links
+
+- These links behave differently when the source of the link (what is being linked to) is moved or removed.
+  - Symbolic links are not updated (they merely contain a string which is the path name of its target)
+  - Hard links always refer to the source, even if moved or removed.
+
+For example, 
+  - if we have a file a.txt. If we create a hard link to the file and then delete the file, we can still access the file using hard link. But if we create a soft link of the file and then delete the file, we can’t access the file through soft link and soft link becomes dangling. Basically hard link increases reference count of a location while soft links work as a shortcut (like in Windows) 
+
+
+Hard Links 
+===============
+- Each hard linked file is assigned the same Inode value as the original. 
+- Hard links are more flexible and remain linked even if the original or linked files are moved throughout the file system.
+- Even if we change the filename of the original file then also the hard links properly work.
+- We cannot create a hard link for a directory to avoid recursive loops.
+- If original file is removed then the link will still show the content of the file.
+- The size of any of the hard link file is same as the original file and if we change the content in any of the hard links then size of all hard link 
+  files are updated 
+- Hardlinks will have same date and time
+- Hardlinks can be created for files, if we update content in any file, it will reflect for other hard link also. It is like backup.
+- The disadvantage of hard links is that it cannot be created for directories.
+- Command to create a hard link is: 
+    -$ ln  [original filename] [link name] 
+
+
+Soft Links
+==============
+- A soft link is similar to the file shortcut feature which is used in Windows Operating systems. 
+- Each soft linked file contains a separate Inode value that points to the original file. 
+- Soft links can be linked across different file systems, although if the original file is deleted or moved, the soft linked file will not work 
+  correctly (called hanging link).
+- Soft Link contains the path for original file and not the contents.
+- Removing soft link doesn’t affect anything but removing original file, the link becomes “dangling” link which points to nonexistent file.
+- A soft link can link to a directory.
+- The size of the soft link is less when compared with linked original file
+- If we change the name of the original file then all the soft links for that file become dangling i.e. they are worthless now.
+- Command to create a Soft link is: 
+     -$ ln  -s [original filename] [link name] 
+
+
+Difference:
+-----------
+- symlink will have diff inodes, hardlinks will have same inode
+- if original file is deleted symlink will break. if original file deleted hard link will work
+- symlink is used to point diff versions, hardlink is used as backup to original file
+- symlink can be created to folders, we can't create hard link to folders
+- symlink will work with diff types of disks, hardlink can't be created for diff disks
+
+
+Inode (Index node number)
+==============================
+- An inode (Index Node) is a data structure on a filesystem on Linux and UNIX-like systems that stores metadata about a file.
+- It includes:
+	  •	File type (file, directory, etc.)
+	  •	Permissions
+	  •	Owner, group
+	  •	File size
+	  •	Timestamps (created, modified, accessed)
+	  •	Pointers to data blocks on disk
+- It does not store:
+	 • File name
+	 •	Path to the file
+- Command to list inode:
+  -$ ls  -li  
+
+
+     
+
+ 
