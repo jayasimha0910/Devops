@@ -28,7 +28,6 @@ Linux follows a hierarchical filesystem where everything starts from the **root 
 
 ----
 
-📌 Summary
 /
 ├── bin      → Basic system commands
 ├── sbin     → System admin commands
@@ -45,3 +44,4 @@ Linux follows a hierarchical filesystem where everything starts from the **root 
 ├── boot     → Boot loader files
 ├── mnt      → Temporary mount points
 └── media    → Mounted external devices
+
