@@ -1,4 +1,4 @@
-# 🐧 Linux Directory Structure – DevOps Cheat Sheet
+# 🐧 Linux Directory Structure
 
 Linux follows a hierarchical filesystem where everything starts from the **root directory (`/`)**. Here's a breakdown of the most important directories and their purposes.
 
@@ -26,15 +26,7 @@ Linux follows a hierarchical filesystem where everything starts from the **root 
 | `/media`  | Mount point for **removable media** like USB drives. |
 | `/boot`   | **Boot loader** and kernel files (`vmlinuz`, `initrd.img`). |
 
----
 
-## 📌 Notes for DevOps
-
-- Config files: `/etc`
-- Logs: `/var/log`
-- Temporary build/test artifacts: `/tmp`
-- CI tools and agents: often installed in `/opt` or `/usr/local/bin`
-- Troubleshooting: check `/proc`, `/var/log`, and system service configs under `/etc`
 
 ---
 
