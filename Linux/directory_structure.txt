@@ -1,0 +1,114 @@
+"/" 
+======
+- '/' is the root directory. 
+- Every other directory is part of '/'
+
+/bin
+======
+- The /bin directory in Linux stands for "binary" and contains essential command-line programs (executables) that are required for basic system functionality, especially during boot or recovery. Example: ls, cp, rm, mkdir, etc.
+
+/dev
+=======
+- The /dev directory in Linux is a special directory that contains device files, also called device nodes. 
+- These files are interfaces to hardware devices, allowing programs and users to interact with devices using standard file operations like read/write.
+- Linux treats everything as a file, including hardware devices.
+- The files in /dev are not regular files; they are special device files created and managed by the kernel or the udev device manager.
+
+/boot
+=======
+- The /boot directory contains all the files needed to boot the Linux operating system. 
+- These files are used very early in the startup process, even before the main filesystem is mounted.
+
+/etc
+======
+- The /etc directory in Linux contains system-wide configuration files and directories. 
+- These files control the behavior of the system, services, and installed applications. 
+- For example:
+  - /etc/passwd
+  - /etc/group
+  - /etc/systemd/system
+
+/home
+======
+- The /home directory is where all regular users’ personal files and settings are stored. 
+- Each user gets a subdirectory inside /home, named after their username
+
+/lib
+======
+- The /lib directory contains essential shared libraries needed by the core system binaries in /bin and /sbin.
+
+/media
+========
+- The /media directory is used to automatically mount external storage devices such as:
+  - USB drives
+  - CD/DVDs
+  - SD cards
+  - External hard drives
+- This media is mostly for desktop auto mount environments. It is like plug and play as we see in windows.
+
+/mnt
+=====
+- The /mnt directory is a standard mount point used for temporarily mounting filesystems, such as:
+  - External hard drives
+  - USB drives (manually mounted)
+  - Network filesystems (NFS, SMB)
+  - ISO images
+- It’s primarily intended for manual or admin use.
+- Manual Mounts Used by system administrators to mount filesystems temporarily No Auto-mounting Unlike /media, this is not used by desktop auto-mount tools Testing or recovery Often used during system recovery or file system testing.
+
+/opt
+======
+- The /opt directory stands for “optional” and is used to install third-party software that is not part of the default Linux distribution.
+
+/proc
+=======
+- The /proc directory is a virtual filesystem (not a real one on disk) that provides a real-time interface to kernel and process information.
+
+/root
+======
+- The /root directory is the home directory for the root user, who is the superuser (administrator) on a Linux system.
+
+/run
+======
+- The /run directory is a temporary filesystem used to store runtime data for processes and services after boot, such as:
+  - Process ID (PID) files
+  - Lock files
+  - Socket files
+
+/sbin
+========
+- The /sbin directory contains essential system binaries that are primarily intended for the system administrator (root). 
+- These binaries are crucial for system boot, repair, and maintenance.
+- Example: fsck, iptables, reboot, iptables, init, etc.
+
+/srv
+=======
+- The /srv directory stands for "service" and is used to store data served by system services such as:
+  - Web servers (httpd, nginx)
+  - FTP servers
+  - File sharing services
+
+/swap
+========
+- In Linux, /swap is not a directory, but rather a swap space used as virtual memory to help manage the system's memory resources.
+- Swap space can be located either in a swap partition (a dedicated disk partition) or a swap file (a file on the filesystem).
+- It allows the system to offload less frequently used memory pages when the physical RAM is full.
+
+/tmp
+======
+- The /tmp directory is used for temporary file storage. 
+- It's a standard location where programs and users can store temporary files that are required only for short-term use.
+
+/usr
+======
+- The /usr directory is one of the core system directories in Linux.
+- It contains user-related programs and data that are not required for the basic system to run, but are essential for most applications.
+
+
+
+
+
+
+
+
+  
