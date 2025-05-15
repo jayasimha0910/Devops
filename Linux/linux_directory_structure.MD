@@ -26,8 +26,3 @@ Linux follows a hierarchical filesystem where everything starts from the **root 
 | `/media`  | Mount point for **removable media** like USB drives. |
 | `/boot`   | **Boot loader** and kernel files (`vmlinuz`, `initrd.img`). |
 
-
-
----
-
-## 🧠 Quick Tree Overview
