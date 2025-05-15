@@ -26,3 +26,22 @@ Linux follows a hierarchical filesystem where everything starts from the **root 
 | `/media`  | Mount point for **removable media** like USB drives. |
 | `/boot`   | **Boot loader** and kernel files (`vmlinuz`, `initrd.img`). |
 
+----
+
+📌 Summary
+/
+├── bin      → Basic system commands
+├── sbin     → System admin commands
+├── etc      → System config files
+├── home     → User home directories
+├── root     → Root user's home directory
+├── var      → Logs and variable data
+├── tmp      → Temporary files
+├── usr      → User programs/libraries
+├── opt      → Optional software
+├── dev      → Device files
+├── proc     → Process and system info
+├── sys      → Kernel and hardware info
+├── boot     → Boot loader files
+├── mnt      → Temporary mount points
+└── media    → Mounted external devices
