@@ -4,10 +4,10 @@
 The `tar` command (short for **tape archive**) is one of the most commonly used commands for **creating**, **viewing**, and **extracting** compressed archive files in Linux. It is often used by system administrators to bundle files or directories into a single compressed file, known as a **tarball**.
 
 ## ✅ Key Purposes of tar:
-- 1.	Combine multiple files/directories into a single file (an archive).
-- 2.	Preserve file permissions, timestamps, and directory structure.
-- 3.	Compress the archive (typically with gzip, bzip2, or xz).
-- 4.	Extract files from an existing archive.
+- Combine multiple files/directories into a single file (an archive).
+- Preserve file permissions, timestamps, and directory structure.
+- Compress the archive (typically with gzip, bzip2, or xz).
+- Extract files from an existing archive.
 
 ### **1. Creating a Tar Archive**
 
