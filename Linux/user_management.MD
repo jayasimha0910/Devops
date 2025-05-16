@@ -193,3 +193,6 @@ This command adds the user `john` to the `developers` group, while preserving an
 ### **Important Notes:**
 - **`usermod -a -G`** is essential when adding users to groups because using **`-G`** without **`-a`** will **replace** the current group membership instead of **appending** to it.
 - You cannot delete a group if there are users whose primary group is that group. You would need to reassign their primary group to another one before deleting the group.
+
+
+### **Changing user primary group**
