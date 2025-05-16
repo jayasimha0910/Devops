@@ -15,4 +15,5 @@ This guide provides step-by-step instructions for managing users and groups on a
 
 ```bash
 useradd -m newuser
-
+- -m ensures a home directory is created at /home/newuser.
+- Replace newuser with your desired username.
