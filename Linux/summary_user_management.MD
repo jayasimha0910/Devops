@@ -94,5 +94,5 @@ ls -ld /home/newuser
 | Remove user from group    | `sudo gpasswd -d username groupname`          |
 | Manually reassign groups  | `sudo usermod -G group1,group2 username`      |
 
-- `group1`, `group2` are the names of groups which user want to be, dont mention group name which user not required
+- `group1`, `group2` are the names of groups which user want to be in, dont mention group name which user dont want to be in
 
