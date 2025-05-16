@@ -16,5 +16,8 @@ This guide provides step-by-step instructions for managing users and groups on a
 ```
 useradd -m newuser
 ```
-- -m ensures a home directory is created at /home/newuser.
+- `-m` ensures a home directory is created at /home/newuser.
 - Replace newuser with your desired username.
+
+# 🔐 Step 2: Set a Password for the User
+
