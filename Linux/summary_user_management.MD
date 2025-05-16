@@ -14,4 +14,5 @@ This guide provides step-by-step instructions for managing users and groups on a
 ## 👤 Step 1: Create a New User
 
 ```bash
-sudo useradd -m newuser
+useradd -m newuser
+
