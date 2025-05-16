@@ -94,6 +94,7 @@ userdel -r john
 | `userdel -r username` | Deletes the user and removes their home directory and mail spool. |
 
 
+
 ## **Creating, Deleting Groups, and Managing User Group Memberships in Linux**
 
 In Linux, managing user groups is essential for organizing users and controlling access to resources. This is done using the `groupadd`, `groupdel`, and `usermod` commands. Let's break them down in detail.
