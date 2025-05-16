@@ -87,3 +87,12 @@ ls -ld /home/newuser
 - Make sure password policies are met (e.g., minimum length, complexity).
 - Group IDs (gid) and user IDs (uid) may vary depending on your system.
 
+## Remove user from a group
+| **Action**                 | **Command**                                  |
+|---------------------------|-----------------------------------------------|
+| Check user groups         | `id username`                                 |
+| Remove user from group    | `sudo gpasswd -d username groupname`          |
+| Manually reassign groups  | `sudo usermod -G group1,group2 username`      |
+
+- `group1`, `group2` are the names of groups which user want to be, dont mention group name which user not required
+
