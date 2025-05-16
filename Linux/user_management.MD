@@ -205,8 +205,8 @@ groupadd devteam
 ```
 usermod -g devteam jayasimha
 ```
--g: Sets the primary group for the user.
-This will change jayasimha’s primary group to devteam.
+   -g: Sets the primary group for the user.
+   This will change jayasimha’s primary group to devteam.
 
 3. **Verify the Change**
 ```
