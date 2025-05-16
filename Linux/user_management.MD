@@ -146,7 +146,7 @@ This will remove the `developers` group from the system.
 ### **4. Adding Users to a Group**
 
 You can add existing users to a group using the `usermod` command. To avoid removing the user from other groups, use the `-a` flag (append) with the `-G` flag.
--aG means: append (-a) the user to the supplementary group (-G) without removing them from existing groups.
+`-aG` means: append `-a` the user to the supplementary group `-G` without removing them from existing groups.
 
 #### **Syntax:**
 ```sh
