@@ -196,3 +196,8 @@ This command adds the user `john` to the `developers` group, while preserving an
 
 
 ### **Changing user primary group**
+
+1. **Create the Group (if not already created)**
+```
+groupadd devteam
+```
