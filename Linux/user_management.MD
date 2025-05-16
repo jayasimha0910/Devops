@@ -93,7 +93,7 @@ userdel -r john
 | `userdel username` | Deletes the user (but keeps the home directory). |
 | `userdel -r username` | Deletes the user and removes their home directory and mail spool. |
 
-
+----
 
 ## **Creating, Deleting Groups, and Managing User Group Memberships in Linux**
 
