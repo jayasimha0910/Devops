@@ -201,3 +201,15 @@ This command adds the user `john` to the `developers` group, while preserving an
 ```
 groupadd devteam
 ```
+2. **Change the Primary Group of the User**
+```
+usermod -g devteam jayasimha
+```
+-g: Sets the primary group for the user.
+This will change jayasimha’s primary group to devteam.
+
+3. **Verify the Change**
+```
+id jayasimha
+```
+
