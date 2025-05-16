@@ -20,4 +20,70 @@ useradd -m newuser
 - Replace newuser with your desired username.
 
 # 🔐 Step 2: Set a Password for the User
+```
+passwd newuser
+```
+You will be prompted to enter and confirm the password:
+```
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+```
+
+## 👨‍👩‍👧 Step 3: Create a New Group
+```
+groupadd devteam
+```
+- Replace devteam with the name of the group you want to create.
+
+## ➕ Step 4: Add User to the Group (Supplementary)
+```
+usermod -aG devteam newuser
+```
+- `-aG` adds newuser to the supplementary group devteam without removing them from other groups.
+To verify:
+```
+id newuser
+```
+You should see:
+```
+uid=1003(newuser) gid=1003(newuser) groups=1003(newuser),1004(devteam)
+```
+
+## 🔄 Step 5: Change the User’s Primary Group
+To set devteam as the **primary group:**
+```
+usermod -g devteam newuser
+```
+To verify:
+```
+id newuser
+```
+Expected:
+```
+uid=1003(newuser) gid=1004(devteam) groups=1004(devteam)
+```
+
+## 🔁 Optional: Keep Original Group as Secondary
+If the original group (e.g., newuser) should remain as a supplementary group:
+```
+usermod -aG newuser newuser
+```
+## 🛡️ Optional: Force Password Change on First Login
+```
+chage -d 0 newuser
+```
+- This will prompt the user to change their password on their first login.
+
+## ✅ Final Checks
+To confirm user details:
+```
+id newuser
+ls -ld /home/newuser
+```
+
+## 📎 Notes
+- Always use sudo if you’re not logged in as root.
+- Make sure password policies are met (e.g., minimum length, complexity).
+- Group IDs (gid) and user IDs (uid) may vary depending on your system.
 
