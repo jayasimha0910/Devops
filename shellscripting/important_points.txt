@@ -1,1 +1,27 @@
+Options:
+=========
+
+read
+=====
+01. (silent) -> -s -> Hides the input (does not echo it to the screen).
+02. (prompt) -> -p -> Displays a prompt string before reading input (without needing a separate echo).
+03. (character count) -n <num> -> This tells read to immediately complete once it has read the specified number of characters — no need to press Enter.
+      • -n must be followed by a number (like 1, 4, 10, etc.).
+    	•	There’s no default value if the number is omitted — it’s a required parameter.
+04. (timeout) -t <seconds> -> makes the read command wait only for a specified number of seconds for input. If no input is given in that time, read exits
+      - If not, read exits with a non-zero exit code (i.e., failure).
+05. -s -p -> This order should be followed if you want use both options.
+06. IFS (Input Field Separator) -> Used to read multiple variables from a single line.
+    Eg: IFS=',' read -p "Enter project,version,region: " project version region
+    User types: myapp,1.2.3,us-east → You get 3 vars.
+07. readarray -> Reads an entire file into an array (not a flag of read, but very useful)
+    - In the context of readarray (or its synonym mapfile), the -t option means - Remove the trailing newline (\n) from each line read from the input.
+    - It adds \n at the end
+    Eg:
+       readarray -t lines < servers.txt
+       for server in "${lines[@]}" 
+       do
+         echo "Deploying to $server"
+       done
+  
 
