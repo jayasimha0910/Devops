@@ -23,5 +23,21 @@ read
        do
          echo "Deploying to $server"
        done
-  
 
+
+
+File Test Options:
+===================
+-e -> Returns true if file/directory exists 
+-s -> Returns true if the file is non-empty 
+-f -> Returns true if the file is a regular file 
+-d -> Returns true if the file is a directory 
+-l -> Returns true if the file is link file 
+-b -> Returns true if the file is block special file 
+-c -> Returns true if the file is character special file
+-r -> Returns true if current user has read permission on the file 
+-w -> Returns true if current user has write permission on the file 
+-x -> Returns true if current user has execute permission on the file 
+-o -> Returns true if current user is owner of the file
+file1 -ot file2 -> Returns true if file1 is older than file2 (last modified time) 
+file1 -nt file2 -> Returns true if file1 is newer than file2(last modified time)
