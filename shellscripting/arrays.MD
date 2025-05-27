@@ -50,7 +50,7 @@ echo "The length of first element : ${#courses[0]}"
 
 output:
 ```
-durgasoft@durgasoft:~/scripts$ test.sh 
+jayasimha@jayasimha:~/scripts$ test.sh 
 First Element : Java 
 Second Element : Python 
 All Elements with @ : Java Python Linux Django DataScience Devops 
